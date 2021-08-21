@@ -1,4 +1,5 @@
-// total cost estiimattion function
+// total cost estiimation function
+
 function totalPrice(){
     const macPriceText = document.getElementById('mac-price').innerText;
     const macPrice = parseInt(macPriceText);
@@ -15,10 +16,10 @@ function totalPrice(){
     // summation of all the cost 
     const total = macPrice + memoryPrice + storagePrice + deliveryCost;
 
-    // console.log(total);
+    
     // update total price 
     document.getElementById('total-mac-price').innerText = total;
-    // update net price 
+    // update net total price 
     document.getElementById('net-total').innerText = total;
 }
 
@@ -83,16 +84,19 @@ function applyPromo(){
       //    case insensetive promocode 
    if(promoCodeValue.toLowerCase() == 'stevekaku'){
 
-       const netTotal = document.getElementById('net-total');
+       const netTotal = document.getElementById('total-mac-price');
+       const displayNetTotal = document.getElementById('net-total');
 
        const netTotalText = netTotal.innerText;
 
        const netTotalNumber = parseInt(netTotalText);
 
        const netTotalPrice = netTotalNumber - ( netTotalNumber * (20/100) );
-       //    console.log(netTotal);
-       netTotal.innerText = netTotalPrice;
-    //    empty input value 
+
+       //    update net total value after applying promo code
+       displayNetTotal.innerText = netTotalPrice;
+
+        //    empty input value 
        promoCode.value = '';
    }
    else{

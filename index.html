@@ -40,11 +40,11 @@
                 <h3 class="text-primary text-center">Memory</h3>
                 <hr>
                <div class="d-flex justify-content-around">
-                    <button id="memory-8gb" class="btn btn-outline-primary">
+                    <button onclick="macMemory(8)" class="btn btn-outline-primary">
                     8gb unified memory
                     </button>
 
-                    <button id="memory-16gb" class="btn btn-outline-primary">
+                    <button onclick="macMemory(16)" class="btn btn-outline-primary">
                     16gb unified memory
                     </button>
                </div>
@@ -55,11 +55,11 @@
                 <h3 class="text-success text-center">Storage</h3>
                 <hr>
                 <div class="d-flex justify-content-around">
-                    <button id="storage-256gb" class="btn btn-outline-success">256gb SSD storage</button>
+                    <button onclick="macStorage(256)" class="btn btn-outline-success">256gb SSD storage</button>
 
-                    <button id="storage-512gb" class="btn btn-outline-success">512gb SSD storage</button>
+                    <button onclick="macStorage(512)" class="btn btn-outline-success">512gb SSD storage</button>
 
-                    <button id="storage-1tb" class="btn btn-outline-success">1tb SSD storage</button>
+                    <button onclick="macStorage(1024)" class="btn btn-outline-success">1tb SSD storage</button>
                 </div>
             </div>
 
@@ -68,11 +68,11 @@
                 <h3 class="text-info text-center">Choose your delivery station</h3>
                 <hr>
                <div class="d-flex justify-content-around">
-                    <button id="long-delivery" class="btn btn-outline-info">
+                    <button id="long-delivery" onclick="deliveryCost('long')" class="btn btn-outline-info">
                     Friday, August 27 FREE Prime delivery
                     </button>
 
-                    <button id="short-delivery" class="btn btn-outline-info">
+                    <button id="short-delivery" onclick="deliveryCost('short')" class="btn btn-outline-info">
                     Sunday, August 22 delivery charge $20
                     </button>
                </div>
@@ -147,6 +147,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 
     <!-- external javascript file  -->
-    <script src="app.js"></script>
+    <!-- <script src="js/app.js"></script> -->
+    <script src="js/app2.js"></script>
 </body>
 </html>
